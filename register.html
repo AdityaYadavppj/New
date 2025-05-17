@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buyer Registration | BrickStore</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo">BrickBazar</div>
+    <h2>Register as a Buyer</h2>
+    <form id="buyerRegisterForm">
+      <input type="text" id="username" placeholder="Email or Mobile Number" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="pincode" placeholder="Area Pincode" required />
+
+      <button type="button" id="sendOtpBtn">Send OTP</button>
+
+      <div class="otp-section" style="display: none;">
+        <input type="text" id="otpInput" placeholder="Enter OTP" />
+        <button type="submit">Verify & Register</button>
+      </div>
+
+      <p class="login-link">Already registered? <a href="login.html">Login</a></p>
+      <a class="forgot-password" href="forgot-password.html">Forgot Password?</a>
+    </form>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

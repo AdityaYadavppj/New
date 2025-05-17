@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seller Registration | BrickBazaar</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo">BrickBazaar</div>
+    <h2>Seller Registration</h2>
+    <form id="sellerRegisterForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Mobile Number" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="pincode" placeholder="Area Pincode" required />
+
+      <button type="submit">Register</button>
+      <p id="formMessage" class="info-message"></p>
+      <a href="login.html">Already have an account? Login</a>
+    </form>
+  </div>
+
+  <script src="seller-register.js"></script>
+</body>
+</html>

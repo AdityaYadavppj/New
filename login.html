@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | BrickBazaar</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="logo">BrickBazaar</div>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email or Mobile Number" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <select id="userType" required style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 8px;">
+        <option value="" disabled selected>Select Role</option>
+        <option value="buyer">Customer</option>
+        <option value="seller">Seller</option>
+      </select>
+
+      <button type="submit">Login</button>
+      <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+    </form>
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>
